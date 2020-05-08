@@ -1,13 +1,14 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
 
-
-
 function Tbody(props) {
 
-  if (props.results.data) {
+  console.log("Tbody props", props);
+
+  if (props.results) {
     console.log("Tbody props", props);
-    const results = props.results.data.results
+    const results = props.results
+
     return (
       <tbody>
         {results.map(result => (
@@ -21,22 +22,12 @@ function Tbody(props) {
           </tr>
         ))}
       </tbody>
-      
     )
   }
+
   return (
     <tbody>
-      ""
-
-      {/* <tr key={uuidv4()}>
-        <td><img src="" alt="placeholder" /></td>
-        <td key={uuidv4()}>Doe</td>
-        <td key={uuidv4()}>John</td>
-        <td key={uuidv4()}>john.doe@example.com</td>
-        <td key={uuidv4()}>1(234)567-9876</td>
-        <td key={uuidv4()}>1(987)654-3210</td>
-      </tr> */}
-
+      <tr></tr>
     </tbody>
   )
 };

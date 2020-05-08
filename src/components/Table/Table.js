@@ -9,7 +9,7 @@ function Table(props) {
 
     return (
         <table id="dtBasicExample" className="table table-striped table-bordered table-sm" width="100%">
-            <Thead />
+            <Thead {...props}/>
             <Tbody {...props} />
             <Tfoot />
         </table>
