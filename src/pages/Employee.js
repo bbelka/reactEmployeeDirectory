@@ -145,7 +145,7 @@ export default function Employee() {
                         name="employeeSearch"
                         onChange={handleInputChange}
                         type="text"
-                        placeholder="Search"
+                        placeholder="Name Search"
                     />
                     <Table sorting={sortingClickHandler} results={filteredEmployeeState} />
 
